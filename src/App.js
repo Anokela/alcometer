@@ -10,11 +10,10 @@ function App() {
   
   function calculatePermille(e) {
     e.preventDefault();
-    let litres = bottles * 0.33;
-    let grams = litres * 8 * 4.5;
-    let burning = weight / 10;
-    // grams_left = ((bottles * 0.33)* 8 * 4.5) - ((weight / 10) * time);
-    let grams_left = grams - (burning * duration);
+    const litres = bottles * 0.33;
+    const grams = litres * 8 * 4.5;
+    const burning = weight / 10;
+    const grams_left = grams - (burning * duration);
     let calculation = 0;
 
     if (gender === 'male') {
